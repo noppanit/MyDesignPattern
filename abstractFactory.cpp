@@ -1,5 +1,15 @@
+/*
+ *  abstractFactory.cpp
+ *  MyDesignPattern
+ *
+ *  Created by Noppanit Charassinvichai on 12/06/2011.
+ *  Copyright 2011 Trinop. All rights reserved.
+ *
+ */
+
 #include <iostream>
 #include <string>
+#include "builder.cpp"
 
 using namespace std;
 
@@ -94,6 +104,13 @@ int main (void) {
 	Factory factory;
 	factory.build(toyota);
 	factory.build(ferrari);
+	
+	ToyotaBuilder toyotaBuilder;
+	FerrariBuilder ferrariBuilder;
+	
+	FactoryBuilder factoryBuilder;
+	factoryBuilder.build(toyotaBuilder);
+	factoryBuilder.build(ferrariBuilder);
 	
     return 0;
 }
