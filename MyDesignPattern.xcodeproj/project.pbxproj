@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5444631913AA9F0B0000D6D7 /* vEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5444631713AA9F0B0000D6D7 /* vEngine.cpp */; };
+		5444631C13AAA0850000D6D7 /* normalEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5444631A13AAA0850000D6D7 /* normalEngine.cpp */; };
 		544AE8EC13AA72C700E4F46B /* engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 544AE8EA13AA72C700E4F46B /* engine.cpp */; };
 		8DD76F650486A84900D96B5E /* abstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* abstractFactory.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76F6A0486A84900D96B5E /* MyDesignPattern.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* MyDesignPattern.1 */; };
@@ -28,6 +30,10 @@
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* abstractFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abstractFactory.cpp; sourceTree = "<group>"; };
+		5444631713AA9F0B0000D6D7 /* vEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vEngine.cpp; sourceTree = "<group>"; };
+		5444631813AA9F0B0000D6D7 /* vEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vEngine.h; sourceTree = "<group>"; };
+		5444631A13AAA0850000D6D7 /* normalEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = normalEngine.cpp; sourceTree = "<group>"; };
+		5444631B13AAA0850000D6D7 /* normalEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normalEngine.h; sourceTree = "<group>"; };
 		544AE8EA13AA72C700E4F46B /* engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = engine.cpp; sourceTree = "<group>"; };
 		544AE8EB13AA72C700E4F46B /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* MyDesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyDesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +85,10 @@
 			children = (
 				544AE8EA13AA72C700E4F46B /* engine.cpp */,
 				544AE8EB13AA72C700E4F46B /* engine.h */,
+				5444631713AA9F0B0000D6D7 /* vEngine.cpp */,
+				5444631813AA9F0B0000D6D7 /* vEngine.h */,
+				5444631A13AAA0850000D6D7 /* normalEngine.cpp */,
+				5444631B13AAA0850000D6D7 /* normalEngine.h */,
 			);
 			name = Product;
 			sourceTree = "<group>";
@@ -144,6 +154,8 @@
 				8DD76F650486A84900D96B5E /* abstractFactory.cpp in Sources */,
 				EF3E305013A56EDE0062F869 /* builder.cpp in Sources */,
 				544AE8EC13AA72C700E4F46B /* engine.cpp in Sources */,
+				5444631913AA9F0B0000D6D7 /* vEngine.cpp in Sources */,
+				5444631C13AAA0850000D6D7 /* normalEngine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

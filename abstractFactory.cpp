@@ -10,35 +10,11 @@
 #include <iostream>
 #include <string>
 #include "builder.cpp"
-#include "engine.h"
+#include "vEngine.h"
+#include "normalEngine.h"
 
 using namespace std;
 
-/* Product */
-/********************************/
-
-
-class VEngine: public Engine
-{
-public:
-	VEngine(int hp)
-	{
-		setHorsePower(hp);
-	}
-	
-};
-
-class NormalEngine: public Engine
-{
-public:
-	NormalEngine(int hp)
-	{
-		setHorsePower(hp);
-	}
-};
-
-/********************************/
-/* Factory */
 class CarFactory
 {
 public:
