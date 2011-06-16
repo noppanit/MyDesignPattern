@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		544AE8EC13AA72C700E4F46B /* engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 544AE8EA13AA72C700E4F46B /* engine.cpp */; };
 		8DD76F650486A84900D96B5E /* abstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* abstractFactory.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76F6A0486A84900D96B5E /* MyDesignPattern.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* MyDesignPattern.1 */; };
 		EF3E305013A56EDE0062F869 /* builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF3E304F13A56EDE0062F869 /* builder.cpp */; };
@@ -27,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* abstractFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abstractFactory.cpp; sourceTree = "<group>"; };
+		544AE8EA13AA72C700E4F46B /* engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = engine.cpp; sourceTree = "<group>"; };
+		544AE8EB13AA72C700E4F46B /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* MyDesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyDesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859E8B029090EE04C91782 /* MyDesignPattern.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MyDesignPattern.1; sourceTree = "<group>"; };
 		EF3E304F13A56EDE0062F869 /* builder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = builder.cpp; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				544AE8ED13AA776B00E4F46B /* Product */,
 				EF3E304F13A56EDE0062F869 /* builder.cpp */,
 				08FB7796FE84155DC02AAC07 /* abstractFactory.cpp */,
 			);
@@ -68,6 +72,15 @@
 				8DD76F6C0486A84900D96B5E /* MyDesignPattern */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		544AE8ED13AA776B00E4F46B /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				544AE8EA13AA72C700E4F46B /* engine.cpp */,
+				544AE8EB13AA72C700E4F46B /* engine.h */,
+			);
+			name = Product;
 			sourceTree = "<group>";
 		};
 		C6859E8C029090F304C91782 /* Documentation */ = {
@@ -130,6 +143,7 @@
 			files = (
 				8DD76F650486A84900D96B5E /* abstractFactory.cpp in Sources */,
 				EF3E305013A56EDE0062F869 /* builder.cpp in Sources */,
+				544AE8EC13AA72C700E4F46B /* engine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,27 +10,13 @@
 #include <iostream>
 #include <string>
 #include "builder.cpp"
+#include "engine.h"
 
 using namespace std;
 
 /* Product */
 /********************************/
-class Engine
-{
-protected:
-	int horsePower;
-	
-public:
-	void setHorsePower(int hp)
-	{
-		horsePower = hp;
-	}
-	
-	int getHorsePower()
-	{
-		return horsePower;
-	}
-};
+
 
 class VEngine: public Engine
 {
