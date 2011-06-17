@@ -17,32 +17,40 @@ class CarAbstractFactory
 {
 public:
 	virtual Engine* buildEngine() = 0;
-	virtual string getName() = 0;
+    virtual Wheel* buildWheel() = 0;
+    virtual Door* buildDoor() = 0;
 };
 
 class ToyotaFactory : public CarAbstractFactory
 {
 public:
 	virtual Engine* buildEngine();
-	virtual string getName();
-	
+    virtual Wheel* buildWheel();
+    virtual Door* buildDoor();
+
 };
 
 class FerrariFactory : public CarAbstractFactory
 {
 public:
 	virtual Engine* buildEngine();
-	virtual string getName();
+    virtual Wheel* buildWheel();
+    virtual Door* buildDoor();
 };
 
 class Factory
 {
 public:
-	void build (CarAbstractFactory& carFactory)
+	Car build (CarAbstractFactory& carFactory)
 	{
         Car car;
 		Engine* engine = carFactory.buildEngine();
+        Wheel* wheel = carFactory.buildWheel();
+        Door* door = carFactory.buildDoor();
+        
         car.setEngine(*engine);
-		cout << carFactory.getName() ; cout << engine->getHorsePower(); cout << "\n";
+        car.setWheels(*wheel);
+        car.setDoors(*door);
+        return car;
 	}
 };

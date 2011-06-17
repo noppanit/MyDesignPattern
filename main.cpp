@@ -12,11 +12,12 @@
 #include "abstractFactory.h"
 
 int main (void) {
+    Car car; 
 	ToyotaFactory toyota;
 	FerrariFactory ferrari;
 	
 	Factory factory;
-	factory.build(toyota);
+	car = factory.build(toyota);
 	factory.build(ferrari);
 	
     return 0;

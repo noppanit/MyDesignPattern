@@ -11,3 +11,19 @@
 void Car::setEngine(Engine &engine){
     engine = engine;
 }
+
+void Car::setDoors(Door &door){
+    door = door;
+}
+
+void Car::setWheels(Wheel &wheel){
+    wheel = wheel;
+}
+
+void Car::setName(string name){
+    name = name;
+}
+
+string Car::getName(){
+    return name;
+}

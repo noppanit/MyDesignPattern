@@ -15,8 +15,13 @@ Engine* ToyotaFactory::buildEngine(){
     return new NormalEngine(90);
 }
 
-string ToyotaFactory::getName(){
-    return "Toyota";
+Wheel* ToyotaFactory::buildWheel(){
+    return new Wheel;
+
+}
+
+Door* ToyotaFactory::buildDoor(){
+    return new Door;
 }
 
 /******** Ferrari **************/
@@ -25,6 +30,11 @@ Engine* FerrariFactory::buildEngine(){
     return new VEngine(400);
 }
 
-string FerrariFactory::getName(){
-    return "Ferrari";
+Wheel* FerrariFactory::buildWheel(){
+    return new Wheel;
 }
+
+Door* FerrariFactory::buildDoor(){
+    return new Door;
+}
+
