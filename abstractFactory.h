@@ -9,6 +9,7 @@
 #include <string>
 #include "vEngine.h"
 #include "normalEngine.h"
+#include "car.h"
 
 using namespace std;
 
@@ -39,7 +40,9 @@ class Factory
 public:
 	void build (CarAbstractFactory& carFactory)
 	{
+        Car car;
 		Engine* engine = carFactory.buildEngine();
+        car.setEngine(*engine);
 		cout << carFactory.getName() ; cout << engine->getHorsePower(); cout << "\n";
 	}
 };

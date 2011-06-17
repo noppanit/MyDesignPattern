@@ -11,6 +11,8 @@
 		5444631C13AAA0850000D6D7 /* normalEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5444631A13AAA0850000D6D7 /* normalEngine.cpp */; };
 		5444631F13AB676F0000D6D7 /* car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5444631D13AB676F0000D6D7 /* car.cpp */; };
 		5444632213AB679C0000D6D7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5444632013AB679C0000D6D7 /* main.cpp */; };
+		5444632613AB8D050000D6D7 /* wheel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5444632413AB8D050000D6D7 /* wheel.cpp */; };
+		5444632913AB8D6E0000D6D7 /* door.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5444632713AB8D6E0000D6D7 /* door.cpp */; };
 		544AE8EC13AA72C700E4F46B /* engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 544AE8EA13AA72C700E4F46B /* engine.cpp */; };
 		8DD76F650486A84900D96B5E /* abstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* abstractFactory.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76F6A0486A84900D96B5E /* MyDesignPattern.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* MyDesignPattern.1 */; };
@@ -40,6 +42,10 @@
 		5444631E13AB676F0000D6D7 /* car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = car.h; sourceTree = "<group>"; };
 		5444632013AB679C0000D6D7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5444632313AB68760000D6D7 /* abstractFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = abstractFactory.h; sourceTree = "<group>"; };
+		5444632413AB8D050000D6D7 /* wheel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wheel.cpp; sourceTree = "<group>"; };
+		5444632513AB8D050000D6D7 /* wheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wheel.h; sourceTree = "<group>"; };
+		5444632713AB8D6E0000D6D7 /* door.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = door.cpp; sourceTree = "<group>"; };
+		5444632813AB8D6E0000D6D7 /* door.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = door.h; sourceTree = "<group>"; };
 		544AE8EA13AA72C700E4F46B /* engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = engine.cpp; sourceTree = "<group>"; };
 		544AE8EB13AA72C700E4F46B /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* MyDesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyDesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +105,10 @@
 				5444631B13AAA0850000D6D7 /* normalEngine.h */,
 				5444631D13AB676F0000D6D7 /* car.cpp */,
 				5444631E13AB676F0000D6D7 /* car.h */,
+				5444632413AB8D050000D6D7 /* wheel.cpp */,
+				5444632513AB8D050000D6D7 /* wheel.h */,
+				5444632713AB8D6E0000D6D7 /* door.cpp */,
+				5444632813AB8D6E0000D6D7 /* door.h */,
 			);
 			name = Product;
 			sourceTree = "<group>";
@@ -168,6 +178,8 @@
 				5444631C13AAA0850000D6D7 /* normalEngine.cpp in Sources */,
 				5444631F13AB676F0000D6D7 /* car.cpp in Sources */,
 				5444632213AB679C0000D6D7 /* main.cpp in Sources */,
+				5444632613AB8D050000D6D7 /* wheel.cpp in Sources */,
+				5444632913AB8D6E0000D6D7 /* door.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
