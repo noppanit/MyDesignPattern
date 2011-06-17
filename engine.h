@@ -6,6 +6,9 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#ifndef ENGINE_H
+#define ENGINE_H
+
 class Engine
 {
 protected:
@@ -15,3 +18,5 @@ public:
 	void setHorsePower(int hp);
 	int getHorsePower();
 };
+
+#endif

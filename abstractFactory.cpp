@@ -7,72 +7,24 @@
  *
  */
 
-#include <iostream>
-#include <string>
-#include "builder.cpp"
-#include "vEngine.h"
-#include "normalEngine.h"
+#include "abstractFactory.h"
 
 using namespace std;
 
-class CarFactory
-{
-public:
-	virtual Engine* buildEngine() = 0;
-	virtual string getName() = 0;
-};
+Engine* ToyotaFactory::buildEngine(){
+    return new NormalEngine(90);
+}
 
-class Toyota : public CarFactory
-{
-public:
-	virtual Engine* buildEngine()
-	{
-		return new NormalEngine(90);
-	}
-	virtual string getName()
-	{
-		return "Toyota";
-	}
-	
-};
+string ToyotaFactory::getName(){
+    return "Toyota";
+}
 
-class Ferrari : public CarFactory
-{
-public:
-	virtual Engine* buildEngine()
-	{
-		return new VEngine(400);
-	}
-	virtual string getName()
-	{
-		return "Ferrari";
-	}
-};
+/******** Ferrari **************/
 
-class Factory
-{
-public:
-	void build (CarFactory& carFactory)
-	{
-		Engine* engine = carFactory.buildEngine();
-		cout << carFactory.getName() ; cout << engine->getHorsePower(); cout << "\n";
-	}
-};
+Engine* FerrariFactory::buildEngine(){
+    return new VEngine(400);
+}
 
-int main (void) {
-	Toyota toyota;
-	Ferrari ferrari;
-	
-	Factory factory;
-	factory.build(toyota);
-	factory.build(ferrari);
-	
-	ToyotaBuilder toyotaBuilder;
-	FerrariBuilder ferrariBuilder;
-	
-	FactoryBuilder factoryBuilder;
-	factoryBuilder.build(toyotaBuilder);
-	factoryBuilder.build(ferrariBuilder);
-	
-    return 0;
+string FerrariFactory::getName(){
+    return "Ferrari";
 }
