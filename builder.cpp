@@ -8,6 +8,7 @@
  */
 #include <iostream>
 #include <string>
+#include "builder.h"
 
 using namespace std;
 
@@ -15,6 +16,7 @@ class CarBuilder{
 public: 
 	virtual void buildEngine() = 0;
 	virtual void buildDoor() = 0;
+    virtual void buildCar() = 0;
 	
 };
 
@@ -27,6 +29,8 @@ public:
 	virtual void buildDoor(){
 		cout << "Toyota doors get built" << "\n";
 	}
+    
+    
 	
 };
 

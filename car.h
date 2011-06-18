@@ -22,8 +22,11 @@ private:
     string name;
     
 public:
+    Engine* getEngine();
     void setEngine(Engine &engine);
+    Wheel* getWheels();
     void setWheels(Wheel &wheel); 
+    Door*  getDoors();
     void setDoors(Door &door);
     string getName();
     void setName(string name);

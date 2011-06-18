@@ -8,12 +8,24 @@
 
 #include "car.h"
 
+Engine* Car::getEngine(){
+    return engine;
+}
+
 void Car::setEngine(Engine &engine){
     engine = engine;
 }
 
+Door* Car::getDoors(){
+    return door;
+}
+
 void Car::setDoors(Door &door){
     door = door;
+}
+
+Wheel* Car::getWheels(){
+    return wheel;
 }
 
 void Car::setWheels(Wheel &wheel){

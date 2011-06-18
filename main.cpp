@@ -11,14 +11,18 @@
 
 #include "abstractFactory.h"
 
+using namespace std;
+
 int main (void) {
-    Car car; 
-	ToyotaFactory toyota;
-	FerrariFactory ferrari;
+	ToyotaFactory toyotaFactory;
+	FerrariFactory ferrariFactory;
 	
 	Factory factory;
-	car = factory.build(toyota);
-	factory.build(ferrari);
+    
+    Car* toyota = factory.build(toyotaFactory);
+	//Car* ferrari = factory.build(ferrariFactory);
+    
+    cout << "Car type: " +toyota->getName() << " Engine hp: ";
 	
     return 0;
 }
