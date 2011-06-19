@@ -55,6 +55,7 @@
 		5444632F13AD3DF50000D6D7 /* prototype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prototype.h; sourceTree = "<group>"; };
 		544AE8EA13AA72C700E4F46B /* engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = engine.cpp; sourceTree = "<group>"; };
 		544AE8EB13AA72C700E4F46B /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		54F4594B13AE486C00FF4674 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* MyDesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyDesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859E8B029090EE04C91782 /* MyDesignPattern.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MyDesignPattern.1; sourceTree = "<group>"; };
 		EF3E304F13A56EDE0062F869 /* builder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = builder.cpp; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 				5444632013AB679C0000D6D7 /* main.cpp */,
 				5444632B13AD3CED0000D6D7 /* factoryMethod.cpp */,
 				5444632E13AD3DF50000D6D7 /* prototype.cpp */,
+				54F4594B13AE486C00FF4674 /* README */,
 			);
 			name = Source;
 			sourceTree = "<group>";
