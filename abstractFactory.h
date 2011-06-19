@@ -55,9 +55,9 @@ public:
         Wheel* wheel = carFactory.buildWheel();
         Door* door = carFactory.buildDoor();
         
-        car.setEngine(*engine);
-        car.setWheels(*wheel);
-        car.setDoors(*door);
+        car.setEngine(engine);
+        car.setWheels(wheel);
+        car.setDoors(door);
         car.setName(carFactory.getName());
         return car;
 	}

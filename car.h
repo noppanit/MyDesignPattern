@@ -16,15 +16,18 @@ using namespace std;
 
 class Car{
 private:
-    Engine* engine;
-    Wheel* wheel;
-    Door* door;
+    Engine* carEngine;
+    Wheel* carWheel;
+    Door* carDoor;
     string name;
     
 public:
-    void setEngine(Engine &engine);
-    void setWheels(Wheel &wheel); 
-    void setDoors(Door &door);
+    Engine* getEngine(); 
+    void setEngine(Engine* engine);
+    Wheel* getWheel();
+    void setWheels(Wheel* wheel); 
+    Door* getDoor();
+    void setDoors(Door* door);
     string getName();
     void setName(string name);
 };

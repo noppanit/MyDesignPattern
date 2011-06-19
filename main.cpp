@@ -20,7 +20,7 @@ int main (void) {
 	Factory factory;
 	car = factory.build(toyota);
     
-    cout << "Car Type: " << car.getName();
+    cout << "Car Type: " << car.getName() << " " << "Engine power: " << car.getEngine()->getHorsePower();
     
 //	factory.build(ferrari);
 	

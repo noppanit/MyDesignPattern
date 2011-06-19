@@ -8,16 +8,28 @@
 
 #include "car.h"
 
-void Car::setEngine(Engine &engine){
-    engine = engine;
+Engine* Car::getEngine(){
+    return this->carEngine;
+}    
+
+void Car::setEngine(Engine* engine){
+    this->carEngine = engine;
 }
 
-void Car::setDoors(Door &door){
-    door = door;
+Door* Car::getDoor(){
+    return this->carDoor;
 }
 
-void Car::setWheels(Wheel &wheel){
-    wheel = wheel;
+void Car::setDoors(Door* door){
+    this->carDoor = door;
+}
+
+Wheel* Car::getWheel(){
+    return this->carWheel;
+}
+
+void Car::setWheels(Wheel* wheel){
+    this->carWheel = wheel;
 }
 
 void Car::setName(string name){
