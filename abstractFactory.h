@@ -19,6 +19,7 @@ public:
 	virtual Engine* buildEngine() = 0;
     virtual Wheel* buildWheel() = 0;
     virtual Door* buildDoor() = 0;
+    virtual string getName() = 0;
 };
 
 class ToyotaFactory : public CarAbstractFactory
@@ -27,6 +28,9 @@ public:
 	virtual Engine* buildEngine();
     virtual Wheel* buildWheel();
     virtual Door* buildDoor();
+    virtual string getName(){
+        return "Toyota";
+    }
 
 };
 
@@ -36,6 +40,9 @@ public:
 	virtual Engine* buildEngine();
     virtual Wheel* buildWheel();
     virtual Door* buildDoor();
+    virtual string getName(){
+        return "Ferrari";
+    }
 };
 
 class Factory
@@ -51,6 +58,7 @@ public:
         car.setEngine(*engine);
         car.setWheels(*wheel);
         car.setDoors(*door);
+        car.setName(carFactory.getName());
         return car;
 	}
 };
