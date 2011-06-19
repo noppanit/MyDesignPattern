@@ -10,19 +10,14 @@
 #include <string>
 #include "abstractFactory.h"
 
-using namespace std;
-
 int main (void) {
     Car car; 
 	ToyotaFactory toyota;
-//	FerrariFactory ferrari;
 	
 	Factory factory;
 	car = factory.build(toyota);
     
-    cout << "Car Type: " << car.getName() << " " << "Engine power: " << car.getEngine()->getHorsePower();
-    
-//	factory.build(ferrari);
-	
+    std::cout << "Car Type: " << car.getName() << " " << "Engine power: " << car.getEngine()->getHorsePower();
+    	
     return 0;
 }

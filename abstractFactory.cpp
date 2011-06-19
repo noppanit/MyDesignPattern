@@ -9,8 +9,6 @@
 
 #include "abstractFactory.h"
 
-using namespace std;
-
 Engine* ToyotaFactory::buildEngine(){
     return new NormalEngine(90);
 }
@@ -22,6 +20,10 @@ Wheel* ToyotaFactory::buildWheel(){
 
 Door* ToyotaFactory::buildDoor(){
     return new Door;
+}
+
+string ToyotaFactory::getName(){
+    return "Toyota";
 }
 
 /******** Ferrari **************/
@@ -36,5 +38,9 @@ Wheel* FerrariFactory::buildWheel(){
 
 Door* FerrariFactory::buildDoor(){
     return new Door;
+}
+
+string FerrariFactory::getName(){
+    return "Ferrari";
 }
 

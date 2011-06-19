@@ -25,24 +25,20 @@ public:
 class ToyotaFactory : public CarAbstractFactory
 {
 public:
-	virtual Engine* buildEngine();
-    virtual Wheel* buildWheel();
-    virtual Door* buildDoor();
-    virtual string getName(){
-        return "Toyota";
-    }
-
+    Engine* buildEngine();
+    Wheel* buildWheel();
+    Door* buildDoor();
+    string getName();
 };
 
 class FerrariFactory : public CarAbstractFactory
 {
 public:
-	virtual Engine* buildEngine();
-    virtual Wheel* buildWheel();
-    virtual Door* buildDoor();
-    virtual string getName(){
-        return "Ferrari";
-    }
+    Engine* buildEngine();
+    Wheel* buildWheel();
+    Door* buildDoor();
+    string getName();
+
 };
 
 class Factory
