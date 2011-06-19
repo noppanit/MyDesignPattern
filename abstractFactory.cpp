@@ -26,21 +26,4 @@ string ToyotaFactory::getName(){
     return "Toyota";
 }
 
-/******** Ferrari **************/
-
-Engine* FerrariFactory::buildEngine(){
-    return new VEngine(400);
-}
-
-Wheel* FerrariFactory::buildWheel(){
-    return new Wheel;
-}
-
-Door* FerrariFactory::buildDoor(){
-    return new Door;
-}
-
-string FerrariFactory::getName(){
-    return "Ferrari";
-}
 

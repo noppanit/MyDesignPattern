@@ -31,16 +31,6 @@ public:
     string getName();
 };
 
-class FerrariFactory : public CarAbstractFactory
-{
-public:
-    Engine* buildEngine();
-    Wheel* buildWheel();
-    Door* buildDoor();
-    string getName();
-
-};
-
 class Factory
 {
 public:

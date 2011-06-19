@@ -7,49 +7,15 @@
  *
  */
 #include <iostream>
-#include <string>
 #include "builder.h"
 
-using namespace std;
+Engine* FerrariBuilder::buildEngine(){
+    Engine* engine = new VEngine(400);
+    return engine;
+}
 
-class CarBuilder{
-public: 
-	virtual void buildEngine() = 0;
-	virtual void buildDoor() = 0;
-    virtual void buildCar() = 0;
-	
-};
-
-class ToyotaBuilder : public CarBuilder {
-public:
-	virtual void buildEngine(){
-		cout << "Toyota engine gets built" << "\n";
-	}
-	
-	virtual void buildDoor(){
-		cout << "Toyota doors get built" << "\n";
-	}
-    
-    
-	
-};
-
-class FerrariBuilder : public CarBuilder {
-public:
-	virtual void buildEngine(){
-		cout << "V12 Engine get built" << "\n";
-	}
-	
-	virtual void buildDoor(){
-		cout << "Hand made doors get built" << "\n";
-	}
-};
-
-class FactoryBuilder{
-public:
-	void build(CarBuilder& carBuilder){
-		carBuilder.buildEngine();
-		carBuilder.buildDoor();
-	}
-};
+Door* FerrariBuilder::buildDoor(){
+    Door* door = new Door;
+    return door;
+}
 
