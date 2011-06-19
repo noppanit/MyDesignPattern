@@ -12,3 +12,13 @@ VEngine::VEngine(int hp)
 {
     setHorsePower(hp);
 }
+
+int VEngine::getTurbo(){
+    return this->turboPower;
+}
+
+void VEngine::setTurbo(int turboPower){
+    this->turboPower = turboPower;
+    // Bad design, but just a temporary.
+    horsePower+= turboPower;
+}

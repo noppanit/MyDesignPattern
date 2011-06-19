@@ -6,6 +6,11 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#ifndef WHEEL_H
+#define WHEEL_H
+
 class Wheel{
     
 };
+
+#endif

@@ -6,6 +6,9 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#ifndef CAR_H
+#define CAR_H
+
 #include <iostream>
 #include <string>
 #include "engine.h"
@@ -31,3 +34,5 @@ public:
     string getName();
     void setName(string name);
 };
+
+#endif

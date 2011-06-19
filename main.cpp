@@ -8,16 +8,25 @@
 
 #include <iostream>
 #include <string>
-#include "abstractFactory.h"
 
-int main (void) {
-    Car car; 
-	ToyotaFactory toyota;
+#include "abstractFactory.h"
+#include "builder.h"
+
+int main (void) { 
+	ToyotaFactory toyotaFactory;
 	
 	Factory factory;
-	car = factory.build(toyota);
+	Car toyota = factory.build(toyotaFactory);
     
-    std::cout << "Car Type: " << car.getName() << " " << "Engine power: " << car.getEngine()->getHorsePower();
+    std::cout<< "Create by Abstract Factory \n";
+    std::cout << "Car Type: " << toyota.getName() << " " << "Engine power: " << toyota.getEngine()->getHorsePower() << "\n";
+
+    FerrariBuilder ferrariBuilder;
+    FactoryBuilder factoryBuilder;
+    Car ferrari = factoryBuilder.build(ferrariBuilder);
+    
+    std::cout << "Create by Buider \n";
+    std::cout << "Car Type: " << ferrari.getName() << " " << "Engine power: " << ferrari.getEngine()->getHorsePower() << "\n";
     	
     return 0;
 }

@@ -6,7 +6,6 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#include "engine.h"
 #include "car.h"
 #include "vEngine.h"
 
@@ -14,6 +13,7 @@ class CarBuilder{
 public: 
 	virtual Engine* buildEngine() = 0;
 	virtual Door* buildDoor() = 0;
+    virtual string getName() = 0;
 	
 };
 
@@ -21,14 +21,16 @@ class FerrariBuilder : public CarBuilder {
 public:
 	virtual Engine* buildEngine();
 	virtual Door* buildDoor();
+    string getName();
 };
 
 class FactoryBuilder{
 public:
 	Car build(CarBuilder& carBuilder){
         Car car;
-		carBuilder.buildEngine();
-		carBuilder.buildDoor();
+		car.setEngine(carBuilder.buildEngine());
+		car.setDoors(carBuilder.buildDoor());
+        car.setName(carBuilder.getName());
         return car;
 	}
 };
