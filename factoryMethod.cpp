@@ -7,3 +7,14 @@
 //
 
 #include "factoryMethod.h"
+
+Car CarCreator::buildCar(){
+    
+    Car car;
+    car.setEngine(buildEngine());
+    car.setDoors(buildDoor());
+    car.setWheels(buildWheel());
+    car.setName(getName());
+    
+    return car;
+}

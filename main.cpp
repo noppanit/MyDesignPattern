@@ -11,6 +11,7 @@
 
 #include "abstractFactory.h"
 #include "builder.h"
+#include "factoryMethod.h"
 
 int main (void) { 
 	ToyotaFactory toyotaFactory;
@@ -27,6 +28,12 @@ int main (void) {
     
     std::cout << "Create by Buider \n";
     std::cout << "Car Type: " << ferrari.getName() << " " << "Engine power: " << ferrari.getEngine()->getHorsePower() << "\n";
-    	
+    
+    MazdaCreator mazdaCreator;
+    Car mazda = mazdaCreator.buildCar();
+    
+    std::cout << "Create by Factory Method \n";
+    std::cout << "Car Type: " << mazda.getName() << " " << "Engine power: " << mazda.getEngine()->getHorsePower() << "\n";
+    
     return 0;
 }
