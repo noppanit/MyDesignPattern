@@ -84,16 +84,13 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				54F4594913AE323F00FF4674 /* Headers */,
 				544AE8ED13AA776B00E4F46B /* Product */,
 				EF3E304F13A56EDE0062F869 /* builder.cpp */,
-				5444632A13AD3C500000D6D7 /* builder.h */,
 				08FB7796FE84155DC02AAC07 /* abstractFactory.cpp */,
-				5444632313AB68760000D6D7 /* abstractFactory.h */,
 				5444632013AB679C0000D6D7 /* main.cpp */,
 				5444632B13AD3CED0000D6D7 /* factoryMethod.cpp */,
-				5444632C13AD3CED0000D6D7 /* factoryMethod.h */,
 				5444632E13AD3DF50000D6D7 /* prototype.cpp */,
-				5444632F13AD3DF50000D6D7 /* prototype.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -110,19 +107,30 @@
 			isa = PBXGroup;
 			children = (
 				544AE8EA13AA72C700E4F46B /* engine.cpp */,
-				544AE8EB13AA72C700E4F46B /* engine.h */,
 				5444631713AA9F0B0000D6D7 /* vEngine.cpp */,
-				5444631813AA9F0B0000D6D7 /* vEngine.h */,
 				5444631A13AAA0850000D6D7 /* normalEngine.cpp */,
-				5444631B13AAA0850000D6D7 /* normalEngine.h */,
 				5444631D13AB676F0000D6D7 /* car.cpp */,
-				5444631E13AB676F0000D6D7 /* car.h */,
 				5444632413AB8D050000D6D7 /* wheel.cpp */,
-				5444632513AB8D050000D6D7 /* wheel.h */,
 				5444632713AB8D6E0000D6D7 /* door.cpp */,
-				5444632813AB8D6E0000D6D7 /* door.h */,
 			);
 			name = Product;
+			sourceTree = "<group>";
+		};
+		54F4594913AE323F00FF4674 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				5444631813AA9F0B0000D6D7 /* vEngine.h */,
+				5444631B13AAA0850000D6D7 /* normalEngine.h */,
+				5444631E13AB676F0000D6D7 /* car.h */,
+				5444632513AB8D050000D6D7 /* wheel.h */,
+				5444632813AB8D6E0000D6D7 /* door.h */,
+				5444632A13AD3C500000D6D7 /* builder.h */,
+				5444632313AB68760000D6D7 /* abstractFactory.h */,
+				5444632C13AD3CED0000D6D7 /* factoryMethod.h */,
+				5444632F13AD3DF50000D6D7 /* prototype.h */,
+				544AE8EB13AA72C700E4F46B /* engine.h */,
+			);
+			name = Headers;
 			sourceTree = "<group>";
 		};
 		C6859E8C029090F304C91782 /* Documentation */ = {
