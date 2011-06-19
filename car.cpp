@@ -21,9 +21,9 @@ void Car::setWheels(Wheel &wheel){
 }
 
 void Car::setName(string name){
-    name = name;
+    this->name = name;
 }
 
 string Car::getName(){
-    return name;
+    return this->name;
 }

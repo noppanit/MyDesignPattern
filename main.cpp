@@ -8,17 +8,21 @@
 
 #include <iostream>
 #include <string>
-
 #include "abstractFactory.h"
+
+using namespace std;
 
 int main (void) {
     Car car; 
 	ToyotaFactory toyota;
-	FerrariFactory ferrari;
+//	FerrariFactory ferrari;
 	
 	Factory factory;
 	car = factory.build(toyota);
-	factory.build(ferrari);
+    
+    cout << "Car Type: " << car.getName();
+    
+//	factory.build(ferrari);
 	
     return 0;
 }
