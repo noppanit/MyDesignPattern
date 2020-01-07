@@ -14,6 +14,8 @@ class CarCreator{
 public:
     Car buildCar();
     
+    // factory methods 
+    
     virtual Engine* buildEngine() = 0;
     virtual Wheel* buildWheel() = 0;
     virtual Door* buildDoor() = 0;
